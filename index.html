@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <meta name="description" content="Play Stone, Paper & Scissors Game" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Stone, Paper & Scissors Game</title>
+  </head>
+  <body>
+    <div class="floating-particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <div class="game-container p-4">
+            <!-- Game Title -->
+            <div class="text-center mb-4">
+              <h1 class="game-title mb-3">🎮 Stone Paper Scissors</h1>
+              <p class="text-white-50 mb-0">
+                Choose your weapon and battle the computer!
+              </p>
+            </div>
+
+            <!-- Score Board -->
+            <div class="score-board p-3 mb-4">
+              <div class="row">
+                <div class="col-4">
+                  <div class="score-item">
+                    <div class="score-number" id="score-user">0</div>
+                    <div class="h6 mb-0">User</div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="score-item">
+                    <div class="score-number" id="score-draws">0</div>
+                    <div class="h6 mb-0">Draws</div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="score-item">
+                    <div class="score-number" id="score-computer">0</div>
+                    <div class="h6 mb-0">Computer</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Game Display Area -->
+            <div class="choice-container">
+              <div class="choice-display" id="playerChoice">
+                <i class="fas fa-question text-white"></i>
+              </div>
+              <div class="vs-text">VS</div>
+              <div class="choice-display" id="computerChoice">
+                <i class="fas fa-question text-white"></i>
+              </div>
+            </div>
+
+            <!-- Result Display -->
+            <div class="result-display">
+              <div class="result-text" id="resultText">Make your choice!</div>
+            </div>
+
+            <!-- Game Buttons -->
+            <div class="game-buttons">
+              <button class="choice-btn stone" data-choice="stone" id="stone">
+                🗿
+              </button>
+              <button class="choice-btn paper" data-choice="paper" id="paper">
+                📄
+              </button>
+              <button
+                class="choice-btn scissors"
+                data-choice="scissors"
+                id="scissors"
+              >
+                ✂️
+              </button>
+            </div>
+
+            <!-- Reset Button -->
+            <div class="text-center mt-4">
+              <button class="reset-btn" id="reset-btn">
+                <i class="fas fa-redo me-2"></i>Reset Game
+              </button>
+            </div>
+
+            <!-- Game Instructions -->
+            <div class="text-center mt-4">
+              <div class="text-white-50 small">
+                <p class="mb-1">🗿 Stone crushes Scissors</p>
+                <p class="mb-1">📄 Paper covers Stone</p>
+                <p class="mb-0">✂️ Scissors cuts Paper</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
